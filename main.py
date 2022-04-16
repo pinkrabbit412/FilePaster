@@ -87,7 +87,7 @@ class Program:
                     if remove_confirm:
                         today_datetime = datetime.datetime.now().strftime("%Y.%m.%d. %H %M' %S''")
                         shutil.copytree(self.target_directory,
-                                        (self.target_directory + " - Backupd at " + today_datetime))
+                                        (self.target_directory + " - Backed up at " + today_datetime))
                     else:
                         raise UserCanceledError()
                 shutil.rmtree(self.target_directory, ignore_errors=True)
